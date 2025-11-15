@@ -1,6 +1,6 @@
 # 📝 NomiNotes
 
-**NomiNotes** is a small, personal notes app I'm building for my wife.  
+is a small, personal notes app I'm building for my wife.  
 It's designed to run as an Android APK and built according to her preferences — aiming for simplicity, speed, tailor made by her requests.
 
 ---
