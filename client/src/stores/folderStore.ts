@@ -25,13 +25,14 @@ export const useFolderStore = defineStore("folder", () => {
     }));
   }
 
-  async function addFolder(name: string) {
-    await addDoc(collection(db, "folders"), {
+  const addFolder = async (name: string): Promise<string> => {
+    const docRef = await addDoc(collection(db, "folders"), {
       name,
       createdAt: new Date(),
     });
     await fetchFolders();
-  }
+    return docRef.id;
+  };
 
   async function deleteFolder(id: string) {
     await deleteDoc(doc(db, "folders", id));

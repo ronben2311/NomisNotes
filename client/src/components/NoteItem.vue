@@ -1,4 +1,5 @@
 <template>
+  <span>note: {{ note.title }}</span>
   <q-card class="q-mb-md">
     <q-card-section>
       <div class="text-h6">{{ note.title }}</div>

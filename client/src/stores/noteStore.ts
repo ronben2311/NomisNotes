@@ -92,6 +92,10 @@ export const useNoteStore = defineStore("note", () => {
       : notes.value;
   });
 
+  function setFolderFilter(folderId: string | null) {
+    selectedFolderId.value = folderId;
+  }
+
   return {
     // state
     noteDraft,
@@ -108,5 +112,6 @@ export const useNoteStore = defineStore("note", () => {
     addNote,
     updateNote,
     deleteNote,
+    setFolderFilter,
   };
 });
